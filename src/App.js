@@ -1,8 +1,8 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import CafeAppFooter from './components/CafeAppFooter';
-import HomePage from './pages/HomePage';
-import DetailPage from './pages/DetailPage';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import CafeAppFooter from "./components/CafeAppFooter";
+import HomePage from "./pages/HomePage";
+import DetailPage from "./pages/DetailPage";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a className="navigation" href="https://github.com/safinaabk/Project-Capstone" target="_blank">
+              <a className="navigation" href="https://github.com/safinaabk/Project-Capstone">
                 About Us
               </a>
             </li>
@@ -28,7 +28,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/cafes/:id" element={<DetailPage />} />
-          <Route path="*" element={'Notfound'} />
+          <Route path="*" element={"Notfound"} />
         </Routes>
         <CafeAppFooter />
       </main>
